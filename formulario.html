@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <title>Formulario de compra</title>
+</head>
+<body>
+    <main class="container mt-3">
+        <article class="card">
+            <div class="card-title text-center mt-1 mb-0">
+                <h4>Tu lista de compras 😁</h4>
+            </div>
+            <div class="card-body">
+                <ul class="list-group">
+                    <li class="list-group-item ps-0">
+                        <div class="container d-flex justify-content-between ps-0">
+                            <div class="container m-0">
+                                <span class="badge bg-primary rounded-pill me-2">1</span>
+                                <span class="lead">Chocolate</span>
+                            </div>
+                            <span>$100</span>
+                        </div>
+                    </li>
+                    <li class="list-group-item ps-0">
+                        <div class="container d-flex justify-content-between ps-0">
+                            <div class="container">
+                                <span class="badge bg-primary rounded-pill me-2">1</span>
+                                <span class="lead">Galleta</span>
+                            </div>
+                            <span>$200</span>
+                        </div>
+                    </li>
+                    <li class="list-group-item ps-0">
+                        <div class="container d-flex justify-content-between ps-0">
+                            <div class="container">
+                                <span class="badge rounded-pill bg-primary me-2">1</span>
+                                <span class="lead">Pan</span>
+                            </div>
+                            <span>$300</span>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="list-group mt-3">
+                    <li class="list-group-item mb-0 d-flex justify-content-end">
+                        <p class="lead">Total: $<span>600</span></p>
+                    </li>
+                </ul>
+            </div>
+            <div class="card-footer d-grid gap-2 bg-light">
+                <button class="btn btn-primary mb-2" id="btnImprimir">Imprimir</button>
+            </div>
+        </article>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
