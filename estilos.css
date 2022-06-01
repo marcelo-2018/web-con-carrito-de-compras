@@ -1,0 +1,20 @@
+.container-titulo{
+    display: flex;
+    justify-content: center;
+}
+
+.titulo{
+    margin-bottom: 30px;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 10em;
+    animation: anim 4s infinite;
+}
+
+@keyframes anim{
+    from { width: 0;}
+}
+
+.titulo{
+    user-select: none;
+}

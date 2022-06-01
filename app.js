@@ -43,7 +43,7 @@ const agregarCarrito = (e) => {
         //distinto de bluuweb
         carrito[indice].cantidad++;
     }
-    
+
     pintarCarrito(carrito);
 };
 
@@ -67,9 +67,9 @@ const pintarCarrito = () => {
     });
     
     lista.appendChild(fragment);
-    
+
     pintarFooter();
-    
+
 };
 
 
@@ -81,10 +81,15 @@ const pintarFooter = () => {
     const cloneFooter = templateFooter.content.cloneNode(true);
     
     cloneFooter.querySelector("p span").textContent = total
+
+    if(total !== 0){
+        
+        fragment.appendChild(cloneFooter);
+        
+        footer.appendChild(fragment);
+    }
     
-    fragment.appendChild(cloneFooter);
-    
-    footer.appendChild(fragment);
+
 }
 
 const btnAgregar = (e) => {
@@ -118,7 +123,7 @@ const btnEliminar = (e) => {
     });
     
     pintarCarrito();
-    
+
 };
 
 
