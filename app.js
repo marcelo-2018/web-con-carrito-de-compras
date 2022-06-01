@@ -121,18 +121,5 @@ const btnEliminar = (e) => {
     
 };
 
-//Imprimir comprobante en pdf
-
-const btnImprimir = document.querySelector("#btnImprimir");
-
-btnImprimir.addEventListener("click", () => {
-    imprimir();
-});
-
-const imprimir = () => {
-
-    window.print();
-};
-
 
 
